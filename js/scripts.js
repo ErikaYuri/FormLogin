@@ -7,4 +7,5 @@ const messageTextarea = document.querySelector("#message")
 
 form.addEventListener("submit", (event) => {
 event.preventDefault();
+
 })
