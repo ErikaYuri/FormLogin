@@ -18,4 +18,12 @@ if (emailInput.value === ""){
     return;
 }
 
-})
+form.submit();
+
+});
+
+function isEmailValid(email){
+    const emailRegex = new RegExp (
+        /^[a-aA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z]{2,}$/
+    );
+}
