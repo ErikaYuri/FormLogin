@@ -13,7 +13,7 @@ if (nameInput.value === ""){
     return;
 }
 
-if (emailInput.value === ""){
+if (emailInput.value === "" || !isEmailValid(emailInput.value)){
     alert("Por favor preencha seu email");
     return;
 }
@@ -26,4 +26,10 @@ function isEmailValid(email){
     const emailRegex = new RegExp (
         /^[a-aA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z]{2,}$/
     );
+
+    if (emailRegex.text(email)){
+        return true;
+    }
+
+    return false;
 }
