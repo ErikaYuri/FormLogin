@@ -18,6 +18,20 @@ if (emailInput.value === "" || !isEmailValid(emailInput.value)){
     return;
 }
 
+if(!validatePassword(passwordInput.value, 8)){
+    alert("A senha precisa de no mínimo 8 dígitos.");
+    return;
+}
+
+if(jobSelect.value === ""){
+    alert("Por favor selecione a sua situação.");
+    return;
+}
+
+if(messageTextarea.value === ""){
+    alert("Por favor escreva uma mensagem.");
+    return;
+}
 form.submit();
 
 });
