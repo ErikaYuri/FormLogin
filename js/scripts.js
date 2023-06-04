@@ -33,3 +33,11 @@ function isEmailValid(email){
 
     return false;
 }
+
+function validatePassword(password, minDigits){
+    if(password.length >= minDigits){
+        return true
+    }
+
+    return false
+}
