@@ -135,4 +135,25 @@ button{
   #footer span {
     font-weight: bold;
   }
-  
+
+  /* Mobile */
+@media (max-width: 450px) {
+  /* Event form */
+  #event-subscription {
+    flex-direction: column;
+    height: auto;
+  }
+
+  #disclaimer {
+    padding: 2em;
+  }
+
+  #disclaimer h2 {
+    margin-bottom: 0.5em;
+  }
+
+  #subscription-form {
+    max-width: 70%;
+    margin-bottom: 2em;
+  }
+}
